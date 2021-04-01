@@ -21,7 +21,7 @@ $( document ).ready(function() {
 
     // AUTHORIZE with Spotify (if needed)
     // *************** REPLACE THESE VALUES! *************************
-    let client_id = 'df6968c34f4b4494ac206c7628d2afc7';
+    let client_id = '4fd4c2be1ee84fa2b3fe6683510614ab';
     // Use the following site to convert your regular url to the encoded version:
     // https://www.url-encode-decode.com/
     let redirect_uri = 'https%3A%2F%2Fmujibsardar.github.io%2Fspotify_jquery_only'; // GitHub Pages URL or whatever your public url to this app is
