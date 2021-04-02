@@ -1,19 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery'
-@Component({
-  selector: 'app-spotify-search-music',
-  templateUrl: './spotify-search-music.component.html',
-  styleUrls: ['./spotify-search-music.component.css']
-})
-export class SpotifySearchMusicComponent implements OnInit {
-  tab1 = ["first", "le premier texte", "ta mere"];
-  tab2 = ["second", "le deuxieme texte", "ton pere"];
-  tab3 = ["third", "le troisieme texte", "ta soeur"];
-  boxes= [this.tab1, this.tab2, this.tab3];
-  constructor() { }
-
-  ngOnInit(): void {
-    $( document ).ready(function() {
+$( document ).ready(function() {
      // Helper Function to Extract Access Token for URL
     const getUrlParameter = (sParam: string) => {
       let sPageURL = window.location.search.substring(1),////substring will take everything after the https link and split the #/&
@@ -83,6 +68,3 @@ export class SpotifySearchMusicComponent implements OnInit {
       }); // End of Spotify ajax call
     }); // End of search button
   }); // End of document.ready
-  }
-
-}
