@@ -1,6 +1,6 @@
 $( document ).ready(function() {
      // Helper Function to Extract Access Token for URL
-    const getUrlParameter = (sParam: string) => {
+    const getUrlParameter = (sParam) => {
       let sPageURL = window.location.search.substring(1),////substring will take everything after the https link and split the #/&
           sURLVariables = sPageURL != undefined && sPageURL.length > 0 ? sPageURL.split('#') : [],
           sParameterName,
