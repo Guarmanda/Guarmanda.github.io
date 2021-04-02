@@ -30,7 +30,7 @@ $( document ).ready(function() {
     const redirect = `https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=token&redirect_uri=${redirect_uri}`;
     // Don't authorize if we have an access token already
     if(accessToken == null || accessToken == "" || accessToken == undefined){
-      var spotifyLoginWindow =window.open(redirect,
+          window.open(redirect,
         'Login with Spotify',
         'width=400,height=500');
     }
